@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        body {
+            background:linear-gradient(to left, #e8e0ba,#cff4b3, #f2a7f2,rgba(162, 225, 236, 0.867));
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            color:black;
+            font-size: 45px;
+            font-weight: 700;
+            text-align: center;
+            background-color: rgb(138, 61, 161);
+            padding: 20px 0;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 20px;
+            margin: 30px auto;
+            max-width: 1000px;
+            height:400px;
+            background: rgb(254, 220, 152) blur;
+            color:black;
+            border-radius: 8px;
+            box-shadow:3px 4px 3px 3px rgb(142, 36, 142) ;
+        }
+        #info{
+            text-align: center;
+        }
+        #info h2{
+            font-size: 25px;
+            color:black;
+        }
+        #info h1{
+            font-size: 40px;
+        }
+        #info p{
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+        #info span{
+            color:purple;
+        }
+
+        .section img {
+            width: 300px;
+            height:auto;
+            border-radius: 15px;
+            object-fit: cover;
+            border-color: black;
+            box-shadow: 2px 1px 2px 1px;
+        }
+        .section div {
+            max-width: 60%;
+            margin: 0 30px;
+        }
+        h2 {
+            font-size: 35px;
+            color:purple;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        p,ul li,div h3{
+            font-size: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+        input,textarea{
+            width:200px;
+            height:30px;
+            margin:10px 10px;
+            color:black;
+            background: rgba(105, 105, 105, 0);
+            border-radius: 5px 10px;
+            border-color: rgb(163, 117, 206);
+        }
+        textarea{
+           margin:20px;
+           width:100%;
+           height:50px;
+           border-radius: 5px 10px;
+       }
+      
+        .contact{
+            text-align: center;
+        }
+        button{
+            width:100px;
+            height:35px;
+            color:black;
+            background-color: rgb(69, 69, 216);
+            border-radius: 5px 10px;
+          
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(138, 61, 161);
+            color: black;
+            margin-top: 20px;
+        }
+        footer p{
+            font-size:15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+         Portfolio
+
+    </header>
+    <div class="container">
+    <section class="section" id="info">
+        <div>
+            <h2>Hi,I'm  <span>Surekha</span></h2>
+            <h1><span>W</span>EB  <span>D</span>EVELOPER</h1>
+            <p>Iam an Enthusiastic web developer.I'm Interested in building  creative websites. </p>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <img src="https://th.bing.com/th/id/OIP.XLaRQ8TgE0ZVl4ROEDns8wHaE8?w=272&h=181&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="About Me">
+        <div>
+            <h2>About Me</h2>
+            <p>Hi, I'm a passionate web designer and developer from Nellore. 
+                I specialize in creating responsive, user-friendly websites.
+                 I enjoy solving complex problems and bringing ideas to life through code.</p>
+        </div>
+    </section>
+
+    <section class="section" id="skills">
+        <div>
+            <h2>Skills</h2>
+            <ul>
+                <li><span>HTML & CSS-  </span>Develop web applications</li>
+                <li><span>Python-  </span>programming language</li>
+                <li><span>Problem Solving-  </span>Solving complex problems</li>
+                <li><span>Communication-  </span>Strong communication skills </li>
+            </ul>
+        </div>
+        <img src="https://th.bing.com/th/id/OIP.0FYh4zbH-iDFtOspBmTtvgHaE8?pid=ImgDet&h=180&dpr=1.5" alt="Skills">
+    </section>
+
+    <section class="section" id="projects">
+        <img src="https://th.bing.com/th/id/OIP.GzhgeJJClT_eKRCc9GNiCgHaEo?rs=1&pid=ImgDetMain" alt="Project 1">
+        <div>
+            <h2>Projects</h2>
+            <h3> Community Service Project</h3>
+            <p>To improve awareness in people about Health and Hygiene.
+                In this,I had interacted with people and spread awareness.<br>
+            I had given some suggestions to lead a healthy life.</p>
+        </div>
+    </section>
+
+    <section class="section" id="resume">
+        <div>
+            <h2>Resume</h2>
+            <p>Download my resume to learn more about my experience and expertise.</p>
+            <a href="./surekha_resume.pdf"> Download Resume</a>
+        </div>
+        <img src="https://th.bing.com/th/id/OIP.qx9RCkPujEEPyYNiyhhCewHaD6?pid=ImgDet&h=180&dpr=1." alt="Resume">
+    </section>
+
+    <section class="section" id="contact">
+        <img src="https://th.bing.com/th/id/OIP.Yd6aq2mw-2iYt1TP0cxzLQHaFP?w=237&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Contact">
+        <div class="contact">
+            <h2>Contact</h2>
+            <input class="name" id="name"
+                type="text"
+                placeholder="Enter Your Name..."
+                required /><br>
+                <input class="Email" id="Email"
+                type="email"
+                placeholder="Enter Your Email..."
+                required /><br>
+                <textarea placeholder="Write Your Query Here....." required/></textarea>
+                <button type="submit" class="send" id="send">Send Message</button><br>
+        </div>
+    </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Codsoft. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+       

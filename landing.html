@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:white;
+            color: #333;
+        }
+
+        header {
+            font-size: 40px;
+            background-color:purple;
+            color:black;
+            padding: 20px 0;
+            text-align: center;
+            border-radius: 8px 10px;
+        }
+       
+
+        section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 20px;
+            margin: 40px auto;
+            max-width: 1000px;
+            height:350px;
+            background:#f9f9f9;
+            color: rgb(8, 8, 8);
+            border-radius: 8px;
+            box-shadow:3px 4px 3px 3px purple;
+            
+        }
+
+        .intro, .about,.signup, .contactus{
+            text-align: center;
+            padding: 50px 20px;
+        
+        }
+
+        .intro h2 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+
+        .intro p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+
+        .intro button {
+            background-color: #0073e6;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 2px 3px;
+            font-size: 1em;
+            cursor:grabbing;
+        }
+        .intro a{
+            color:white;
+            text-decoration: none;
+        }
+
+        .courses {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .course {
+            background:lightgray;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 5px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .course h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .course p {
+            font-size: 1em;
+            margin-bottom: 15px;
+        }
+
+        .course button {
+            background-color: #0073e6;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        .about h2,.signup h2 ,.contactus h2{
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .about p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .signup form ,.contactus form{
+            width: 400px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .signup input ,.contactus input,.contactus textarea{
+            margin-bottom: 10px;
+            padding: 6px;
+            font-size: 1em;
+            border: 1px solid #100505;
+            border-radius: 5px 10px;
+        }
+
+        .signup button, .contactus button {
+            background-color: #0073e6;
+            color: white;
+            padding: 10px;
+            border: none;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .signup input::placeholder, .contactus input{
+            text-align: center;
+        }
+        .contactus textarea::placeholder{
+            text-align: center;
+        }
+       .contactus{
+        background-color:bisque;
+       }
+      
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: purple;
+            color: white;
+            font-size: 0.9em;
+            border-radius: 8px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+        <header>
+            Codsoft Internship
+        </header>
+    </div>
+    <section class="intro">
+        <div class="container">
+            <h2>Build Your Career To Reach Your Goals</h2>
+            <p>Learn practical skills and gain real-world experience with our specially designed internship programs.</p>
+            <button><a href="#courses">Explore Courses</a></button>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are dedicated to providing various internship oppurtunities to help individuals excel in their careers.
+                We encourage the individuals who are willing to grow in thier career and build a bright future.
+                Through this internship program any individual can gain real time experience by applying their logics.
+                At the end of this internship we will provide certificate which can be put in your resume.</p>
+        </div>
+    </section>
+    <section id="courses" class="courses">
+        <div class="course">
+            <h3>Web Development</h3>
+            <p>Learn the fundamentals of web design and development with hands-on projects.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="course">
+            <h3>Data Science</h3>
+            <p>Master data analysis, visualization, and machine learning techniques.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="course">
+            <h3>android Development</h3>
+            <p>Creating user friendly , optimised apps for smart phones,tablets, and other devices running the android operting system.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="course">
+            <h3>AI/ML</h3>
+            <p>Focused on creating systems that can perform tasks requiring human intelligence.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="course">
+            <h3>UI/UX Design</h3>
+            <p>It focus on creating engaging and user-ftiendly digital products.</p>
+            <button>Learn More</button>
+        </div>
+    </section>
+    <section id="signup" class="signup">
+        <div class="container">
+            <h2>Sign Up </h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="password" placeholder="Your Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </section>
+    <section id="contactus" class="contactus">
+        <div class="container">
+            <h2>Contact Us </h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Write Your Query Here..."></textarea> 
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        &copy; 2024 Codsoft. All rights reserved.
+    </footer>
+</body>
+</html>
+
+
+
+
